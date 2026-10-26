@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculator" aria-label="Calculator app">
+      <div class="display-wrap">
+        <div id="expression" class="expression" aria-live="polite">0</div>
+        <div id="result" class="result" aria-live="polite">0</div>
+      </div>
+
+      <div class="buttons" aria-label="Calculator buttons">
+        <button type="button" class="button accent" data-action="clear">C</button>
+        <button type="button" class="button accent" data-action="delete">DEL</button>
+        <button type="button" class="button accent" data-value="(">(</button>
+        <button type="button" class="button accent" data-value=")">)</button>
+
+        <button type="button" class="button" data-value="7">7</button>
+        <button type="button" class="button" data-value="8">8</button>
+        <button type="button" class="button" data-value="9">9</button>
+        <button type="button" class="button operator" data-value="/">÷</button>
+
+        <button type="button" class="button" data-value="4">4</button>
+        <button type="button" class="button" data-value="5">5</button>
+        <button type="button" class="button" data-value="6">6</button>
+        <button type="button" class="button operator" data-value="*">×</button>
+
+        <button type="button" class="button" data-value="1">1</button>
+        <button type="button" class="button" data-value="2">2</button>
+        <button type="button" class="button" data-value="3">3</button>
+        <button type="button" class="button operator" data-value="-">−</button>
+
+        <button type="button" class="button" data-value="0">0</button>
+        <button type="button" class="button" data-value=".">.</button>
+        <button type="button" class="button" data-action="equals">=</button>
+        <button type="button" class="button operator" data-value="+">+</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
